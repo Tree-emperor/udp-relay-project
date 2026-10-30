@@ -1,0 +1,4 @@
+QPC_frequency_Hz=10000000
+QPC_tick_us=0.100
+QPC_adjacent_pair_samples=100000 min_us=0.200 p50_us=0.300 p99_us=0.400 max_us=156.700
+steady_clock_adjacent_pair_samples=100000 zero_deltas=100000 smallest_positive_delta_ns=0

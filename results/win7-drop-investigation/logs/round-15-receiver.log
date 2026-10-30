@@ -1,0 +1,18 @@
+DIAG SO_RCVBUF=8192
+Listening on UDP 9001. Ctrl+C to stop.
+  received 50 packets...
+  received 100 packets...
+  received 150 packets...
+  received 200 packets...
+DIAG raw=200 parsed=200 invalid=0 duplicates=0 udp_stats_status=0/0 udp_in_errors_delta=0
+DIAG missing=
+
+==== Results ====
+Forwarder SERVICE time (receiver inter-arrival, saturated) (199 samples)
+  min=0.0  avg=248.9  p50=0.0  p99=16510.0  max=16511.0 us
+  -> While saturated, this gap equals the relay's per-packet cost.
+  -> The relay's own recvfrom->sendto time (in relay.log) is ~165 us.
+End-to-end ONE-WAY latency (send -> receive) (200 samples)
+  min=0.0  avg=12135.2  p50=16510.0  p99=33021.0  max=33021.0 us
+  -> Sender bursts faster than the relay forwards, so packets queue;
+     this number reflects queue wait, NOT the forwarding cost.

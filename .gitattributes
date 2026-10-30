@@ -1,0 +1,6 @@
+# Keep the original bytes of historical measurement evidence and source snapshots.
+/results/**/*.log -text -whitespace
+/results/**/environment.txt -text -whitespace
+/results/**/mingw-clock-evidence.txt -text -whitespace
+/results/**/manual-entry-final-exit.txt -text -whitespace
+/results/win7-2026-10-30/source/** -text

@@ -1,0 +1,9 @@
+name="Windows7-x64"
+ostype="Windows 7 (64-bit)"
+memory=4096
+cpuexecutioncap=100
+cpus=2
+paravirtprovider="default"
+effparavirtprovider="hyperv"
+VMState="running"
+nic1="nat"

@@ -1,0 +1,26 @@
+
+> 0000000000000000 <std::chrono::_V2::steady_clock::now()>:
+     0:	48 83 ec 38          	sub    $0x38,%rsp
+     4:	31 d2                	xor    %edx,%edx
+     6:	48 8d 4c 24 28       	lea    0x28(%rsp),%rcx
+>    b:	e8 00 00 00 00       	call   10 <std::chrono::_V2::steady_clock::now()+0x10>
+  			c: IMAGE_REL_AMD64_REL32	gettimeofday
+    10:	48 63 44 24 28       	movslq 0x28(%rsp),%rax
+    15:	48 63 54 24 2c       	movslq 0x2c(%rsp),%rdx
+    1a:	48 69 c0 40 42 0f 00 	imul   $0xf4240,%rax,%rax
+    21:	48 01 d0             	add    %rdx,%rax
+    24:	48 69 c0 e8 03 00 00 	imul   $0x3e8,%rax,%rax
+    2b:	48 83 c4 38          	add    $0x38,%rsp
+    2f:	c3                   	ret
+  
+  lt1-codecvt.o:     file format pe-x86-64
+  
+  
+  Disassembly of section .text$_ZNKSt7codecvtIDsciE10do_unshiftERiPcS2_RS2_:
+  
+  0000000000000000 <std::__codecvt_utf8_base<char32_t>::do_unshift(int&, char*, char*, char*&) const>:
+     0:	48 8b 44 24 28       	mov    0x28(%rsp),%rax
+     5:	4c 89 00             	mov    %r8,(%rax)
+     8:	b8 03 00 00 00       	mov    $0x3,%eax
+
+

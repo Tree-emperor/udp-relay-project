@@ -1,0 +1,6 @@
+/.tools/
+/build/
+/dist/
+/.workbuddy/
+**/runs/
+*.tmp

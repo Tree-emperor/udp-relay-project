@@ -1,0 +1,7 @@
+Running one round: 200 packets, all inside this Windows 7 VM.
+round-00 sent=200 forwarded=200 received=200 passed=True
+Benchmark completed; all test processes stopped.
+Windows 7 UDP relay local latency (recvfrom return -> sendto return)
+Sent=200 Forwarded=200 Received=200
+Samples=200 Min=4.900 Mean=41.138 P50=20.300 P95=59.400 P99=116.700 Max=2918.700 us
+Saved in: C:\udp-manual\runs\20261030-111253-852

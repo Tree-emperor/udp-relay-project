@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "os": "Windows 7 Professional SP1 x64 (6.1.7601)",
+  "metric": "recvfrom return to sendto return; same guest loopback; QPC",
+  "unit": "us",
+  "frequency_hz": 10000000,
+  "warmup_rounds_excluded": 1,
+  "measured_rounds": 10,
+  "quantile_method": "nearest rank: sorted[ceil(p*N)-1]",
+  "outliers_removed": 0,
+  "sent_packets": 2000,
+  "forwarded_packets": 2000,
+  "received_packets": 1999.0,
+  "overall": {
+    "count": 2000,
+    "min_us": 4.2,
+    "mean_us": 19.5174,
+    "p50_us": 18.2,
+    "p95_us": 44.7,
+    "p99_us": 78.5,
+    "max_us": 188.1,
+    "at_least_1ms": 0
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "stats": {
+        "count": 200,
+        "min_us": 4.5,
+        "mean_us": 18.418,
+        "p50_us": 18.4,
+        "p95_us": 30.3,
+        "p99_us": 48.7,
+        "max_us": 56.9,
+        "at_least_1ms": 0
+      }
+    },
+    {
+      "round": 2,
+      "stats": {
+        "count": 200,
+        "min_us": 4.3,
+        "mean_us": 18.1205,
+        "p50_us": 17.8,
+        "p95_us": 38.0,
+        "p99_us": 56.5,
+        "max_us": 119.9,
+        "at_least_1ms": 0
+      }
+    },
+    {
+      "round": 3,
+      "stats": {
+        "count": 200,
+        "min_us": 4.5,
+        "mean_us": 16.785,
+        "p50_us": 17.8,
+        "p95_us": 42.4,
+        "p99_us": 81.9,
+        "max_us": 99.9,
+        "at_least_1ms": 0
+      }
+    },
+    {
+      "round": 4,
+      "stats": {
+        "count": 200,
+        "min_us": 4.5,
+        "mean_us": 25.101,
+        "p50_us": 18.6,
+        "p95_us": 56.4,
+        "p99_us": 108.3,
+        "max_us": 188.1,
+        "at_least_1ms": 0
+      }
+    },
+    {
+      "round": 5,
+      "stats": {
+        "count": 200,
+        "min_us": 7.8,
+        "mean_us": 22.118,
+        "p50_us": 18.1,
+        "p95_us": 46.8,
+        "p99_us": 75.1,
+        "max_us": 78.2,
+        "at_least_1ms": 0
+      }
+    },
+    {
+      "round": 6,
+      "stats": {
+        "count": 200,
+        "min_us": 4.2,
+        "mean_us": 17.8,
+        "p50_us": 17.3,
+        "p95_us": 44.5,
+        "p99_us": 79.5,
+        "max_us": 97.3,
+        "at_least_1ms": 0
+      }
+    },
+    {
+      "round": 7,
+      "stats": {
+        "count": 200,
+        "min_us": 4.6,
+        "mean_us": 22.0055,
+        "p50_us": 19.0,
+        "p95_us": 47.8,
+        "p99_us": 83.4,
+        "max_us": 90.5,
+        "at_least_1ms": 0
+      }
+    },
+    {
+      "round": 8,
+      "stats": {
+        "count": 200,
+        "min_us": 6.7,
+        "mean_us": 21.173,
+        "p50_us": 18.4,
+        "p95_us": 43.7,
+        "p99_us": 63.5,
+        "max_us": 79.8,
+        "at_least_1ms": 0
+      }
+    },
+    {
+      "round": 9,
+      "stats": {
+        "count": 200,
+        "min_us": 4.2,
+        "mean_us": 16.879,
+        "p50_us": 17.6,
+        "p95_us": 48.3,
+        "p99_us": 76.8,
+        "max_us": 142.9,
+        "at_least_1ms": 0
+      }
+    },
+    {
+      "round": 10,
+      "stats": {
+        "count": 200,
+        "min_us": 4.9,
+        "mean_us": 16.7735,
+        "p50_us": 18.2,
+        "p95_us": 38.5,
+        "p99_us": 74.6,
+        "max_us": 84.3,
+        "at_least_1ms": 0
+      }
+    }
+  ]
+}

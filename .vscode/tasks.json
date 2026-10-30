@@ -1,0 +1,72 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "UDP: build all",
+            "type": "process",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}/build.ps1"
+            ],
+            "options": { "cwd": "${workspaceFolder}" },
+            "problemMatcher": ["$gcc"],
+            "group": { "kind": "build", "isDefault": true },
+            "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+        },
+        {
+            "label": "UDP: receiver",
+            "type": "process",
+            "command": "${workspaceFolder}/build/udp_receiver.exe",
+            "options": { "cwd": "${workspaceFolder}" },
+            "isBackground": true,
+            "problemMatcher": {
+                "base": "$gcc",
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "^\\s*$",
+                    "endsPattern": "^Listening on UDP [0-9]+\\. Ctrl\\+C to stop\\."
+                }
+            },
+            "presentation": { "reveal": "always", "panel": "dedicated", "group": "udp", "clear": true }
+        },
+        {
+            "label": "UDP: relay",
+            "type": "process",
+            "command": "${workspaceFolder}/build/udp_test.exe",
+            "options": { "cwd": "${workspaceFolder}" },
+            "isBackground": true,
+            "problemMatcher": {
+                "base": "$gcc",
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "^Listening on UDP ",
+                    "endsPattern": "^Forward to "
+                }
+            },
+            "presentation": { "reveal": "always", "panel": "dedicated", "group": "udp", "clear": true }
+        },
+        {
+            "label": "UDP: sender",
+            "type": "process",
+            "command": "${workspaceFolder}/build/udp_sender.exe",
+            "options": { "cwd": "${workspaceFolder}" },
+            "problemMatcher": [],
+            "presentation": { "reveal": "always", "panel": "dedicated", "group": "udp", "clear": true }
+        },
+        {
+            "label": "UDP: run demo",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "UDP: build all",
+                "UDP: receiver",
+                "UDP: relay",
+                "UDP: sender"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

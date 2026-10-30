@@ -1,0 +1,10 @@
+﻿OS=Microsoft Windows 7 专业版 
+Version=6.1.7601
+ServicePack=1
+Architecture=64-bit
+CPU=Intel(R) Core(TM) i5-9500 CPU @ 3.00GHz
+LogicalProcessors=2
+VisibleMemoryKB=4193848
+StopwatchFrequency=10000000
+StopwatchIsHighResolution=True
+GuestTime=2026-10-30T10:50:18+08:00
